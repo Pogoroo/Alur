@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid #fff;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #ffc107;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+header h5 {
+    margin: 10px 0 20px;
+    font-style: italic;
+    color: #e0e0e0;
+}
+
+header input {
+    padding: 15px;
+    width: 60%;
+    max-width: 500px;
+    border: 2px solid #ffc107;
+    border-radius: 50px;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header input:focus {
+    width: 70%;
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffc107;
+}
+
+/* Book List Styles */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 15px;
+}
+
+/* Book Card Styles */
+.book {
+    background: linear-gradient(to bottom, #ffffff, #e0e0e0);
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 15px;
+    width: 180px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.book img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.book:hover img {
+    transform: scale(1.1);
+}
+
+.book p {
+    font-weight: bold;
+    margin: 0;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header input {
+        width: 80%;
+    }
+
+    .book {
+        width: 150px;
+    }
+}
+a {
+    color: inherit; /* Warna mengikuti elemen induk */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
